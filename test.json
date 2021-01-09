@@ -1,0 +1,99 @@
+({
+  "responseId": "e7eeef31-00ee-4808-b858-373a089e60f0-77b242db",
+  "queryResult": {
+    "queryText": "2",
+    "parameters": {
+      "segundonumero": 2
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "Por favor, tente novamente!",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": ["Por favor, tente novamente!"]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/nieckson-hqwe/locations/global/agent/sessions/b987eae0-e0c2-c109-5bb9-66ab82e6bab8/contexts/ctx-apresentacao",
+        "lifespanCount": 5,
+        "parameters": {
+          "nome": "Joeckson",
+          "nome.original": "Joeckson",
+          "endereco": "rua nova",
+          "endereco.original": "rua nova",
+          "operacao": 2,
+          "operacao.original": "2",
+          "primeironumero": 1,
+          "primeironumero.original": "1",
+          "segundonumero": 2,
+          "segundonumero.original": "2"
+        }
+      },
+      {
+        "name": "projects/nieckson-hqwe/locations/global/agent/sessions/b987eae0-e0c2-c109-5bb9-66ab82e6bab8/contexts/ctx-operacao",
+        "lifespanCount": 2,
+        "parameters": {
+          "endereco": "rua nova",
+          "endereco.original": "rua nova",
+          "operacao": 2,
+          "operacao.original": "2",
+          "primeironumero": 1,
+          "primeironumero.original": "1",
+          "segundonumero": 2,
+          "segundonumero.original": "2"
+        }
+      },
+      {
+        "name": "projects/nieckson-hqwe/locations/global/agent/sessions/b987eae0-e0c2-c109-5bb9-66ab82e6bab8/contexts/ctx-seugundo-numero",
+        "parameters": {
+          "primeironumero": 1,
+          "primeironumero.original": "1",
+          "segundonumero": 2,
+          "segundonumero.original": "2"
+        }
+      },
+      {
+        "name": "projects/nieckson-hqwe/locations/global/agent/sessions/b987eae0-e0c2-c109-5bb9-66ab82e6bab8/contexts/__system_counters__",
+        "parameters": {
+          "no-input": 0,
+          "no-match": 0,
+          "segundonumero": 2,
+          "segundonumero.original": "2"
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/nieckson-hqwe/agent/intents/2b5754ec-cd6b-49ec-bb54-a83edde16c79",
+      "displayName": "6segundo-numero"
+    },
+    "intentDetectionConfidence": 1,
+    "languageCode": "pt-br"
+  },
+  "originalDetectIntentRequest": {
+    "source": "DIALOGFLOW_CONSOLE",
+    "payload": {}
+  },
+  "session": "projects/nieckson-hqwe/locations/global/agent/sessions/b987eae0-e0c2-c109-5bb9-66ab82e6bab8"
+},
+{
+  "telegram": {
+    "reply_markup": {
+      "inline_keyboard": [
+        [
+          {
+            "callback_data": "1",
+            "text": "Adição"
+          }
+        ],
+        [
+          {
+            "text": "Subtração",
+            "callback_data": "2"
+          }
+        ]
+      ]
+    }
+  }
+})
