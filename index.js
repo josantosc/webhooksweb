@@ -1,5 +1,5 @@
 const express = require("express");
-const {functionAdc, functionSub} = require('./src/operation')
+const { functionAdc, functionSub } = require("./src/operation");
 const app = express();
 
 express.json();
